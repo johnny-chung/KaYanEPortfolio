@@ -81,7 +81,7 @@ header button{
     border: none;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 5px;
     background-color: #e7f6f28f;
     display: none;
 }
