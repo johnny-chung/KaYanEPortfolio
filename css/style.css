@@ -1,0 +1,158 @@
+body {
+    margin:auto;
+    width: 90%;
+    background-color: #e7f6f2;
+    font-family: 'Roboto', 'Mulish', helvetica, sans-serif;
+}
+
+.flex-container {
+    display:inline-flex;  
+}
+
+
+header{
+    position: relative;    
+}
+
+nav{
+    margin:0; 
+
+}
+
+nav.heroBG{
+    height: 25rem;
+    background-image: url("../media/hero_2.2.jpg");
+    background-size: 100%;
+    background-position-y: -8rem;
+    background-repeat: no-repeat;
+}
+
+nav.flex-container{
+    align-items: top; 
+    justify-content: center;
+    width: 100%;     
+}
+
+nav li{
+    list-style: none;    
+}
+
+nav a{
+    text-decoration: none;     
+}
+
+
+nav>*{
+    flex-basis: 10%; 
+    height: 2.5rem;   
+    padding: 0.5rem;
+    background-color: #e7f6f28f ;
+    text-align: center;    
+    color:#2C3333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .active{
+    background-color: #bbe2e3b2;
+}
+
+nav li:hover{
+    background-color: #f0fefa9c;
+}
+
+nav .logo {
+    width: 12rem;
+}
+
+/* nav .first{
+    position: absolute;
+    left: 0;
+    background-color:#bbe2e366
+} */
+
+
+section{
+    text-align: justify;
+    text-justify: inter-word;
+    margin:0;
+    padding: 1rem;
+    background-color:#395B64;    
+}
+
+section div {
+    width: 90%;
+    background-color: #E7F6F2;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+section div img {
+    width: 25%;
+    box-shadow: rgb(138, 138, 138) 0 0 6px;  
+    border: 8px solid white;
+    margin: 0.5rem 1.5rem 1rem 1.5rem;
+}
+
+section div img.large {
+    width: 90%;
+}
+section p{
+    margin: 1rem 1rem;
+    color:#2C3333;
+}
+
+section h2 {
+    color: #E94560;
+    margin: 1rem 1rem;
+}
+
+section h3, h4{
+    color: #0F3460;
+    margin: 1rem 1rem;
+}
+section h5{
+    color: #395B64;
+    margin: 1rem 1rem;
+}
+
+section img.float-left {
+    float: left;
+}
+
+section img.float-right {
+    float:right;
+}
+
+section span.clear-left { 
+    clear: left;
+    display: block; 
+}
+
+section span.clear-right { 
+    clear: right;
+    display: block; 
+}
+
+
+footer{
+    display:flex;
+    flex-direction: column;
+    color: #E7F6F2;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    background-color: #2C3333;
+}
+
+footer p{
+    color: #395B64;
+    margin: 0.5rem;
+}
+
+footer p.bright{
+    color: #A5C9CA;
+}
+
