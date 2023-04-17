@@ -17,25 +17,33 @@
       href="https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="./src/app.js"></script>
   </head>
   <body>
     <header>
-      <nav class="flex-container heroBG">
+      <nav class="navMenu flex-container heroBG">
         <li class="first">
-          <a href="index.html"
-            ><img class="logo" src="./media/logo-no-background.png" alt="logo"
-          /></a>
+          <a href="index.html">
+            <img class="logo" src="./media/logo-no-background.png" alt="logo"/>
+          </a>
         </li>
         <li class="active"><a href="index.html">About Me</a></li>
         <li ><a href="./pages/page1.html">Curriculum Design</a></li>
         <li><a href="./pages/page2.html">Pedagogical Documentation</a></li>
         <li><a href="./pages/page3.html">Inclusive Practice</a></li>
-        <li><a href="./pages/page4.html">Reflective Practice</a></li>
+        <li><a href="./pages/page4.html">Reflective Practice</a></li>        
+        <p>By Josh Eckstein, from Unsplash.com</p>
       </nav>
+      <button class="menuBtn last">
+        <img src="./media/menu.png" alt="menu">
+      </button>
     </header>
     <section>
       <div>
-        <img class="float-left" src="./media/sample_1.1.jpg" alt="" />
+        <figure class="float-left">
+          <img src="./media/sample_1.1.jpg" alt="Luis Arias" />
+          <figcaption>By Luis Arias, from Unsplash.com</figcaption>
+        </figure>        
         <h2>
             Hello!
         </h2>
@@ -52,7 +60,11 @@
         <span class="clear-left"></span>
       </div>
       <div>
-        <img class="float-right" src="./media/sample_2.1.jpg" alt="" />
+        <figure class="float-right">
+          <img src="./media/sample_2.1.jpg" alt="Sigmund" />
+          <figcaption>By Sigmund, from Unsplash.com</figcaption>
+        </figure>
+        
         <p>
           In my first placement, I had worked as a Student Early Childhood
           Educator (“ECE”) in Centro Clinton Day Care Centre on Mondays and
@@ -70,7 +82,11 @@
         <span class="clear-right"></span>
       </div>
       <div>
-        <img class="float-left" src="./media/sample_3.1.jpg" alt="" />
+        <figure class="float-left">
+          <img src="./media/sample_3.1.jpg" alt="Markus Spiske" />
+          <figcaption>By Markus Spiske, from Unsplash.com</figcaption>
+        </figure>
+        
         <p>
           As a patient and friendly person, I am enthusiastic about interacting
           with children with love and care. I would learn to take their needs

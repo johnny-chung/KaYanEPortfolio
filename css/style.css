@@ -16,21 +16,21 @@ header{
 
 nav{
     margin:0; 
-
 }
 
 nav.heroBG{
     height: 25rem;
     background-image: url("../media/hero_2.2.jpg");
     background-size: 100%;
-    background-position-y: -8rem;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
 nav.flex-container{
     align-items: top; 
     justify-content: center;
-    width: 100%;     
+    width: 100%;    
+    transition: height 1s; 
 }
 
 nav li{
@@ -66,12 +66,71 @@ nav .logo {
     width: 12rem;
 }
 
+nav>p {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 10px;
+    margin: 3px;
+    color: #395B64;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+header button{
+    flex-basis: 1rem;
+    height: 1.5rem;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #e7f6f28f;
+    display: none;
+}
+
+header button:hover {
+    cursor: pointer;
+    background-color: #f0fefa9c;
+}
+
+header button>img {
+    width: 1rem;
+    opacity: 80%;
+}
+
 /* nav .first{
     position: absolute;
     left: 0;
     background-color:#bbe2e366
 } */
 
+@media (max-width: 700px){
+    header button{
+        display:inline-block;
+    }
+
+    nav.flex-container{
+       flex-direction: column;
+       background-image: none;
+       flex-basis: 5%; 
+    }
+    .navMenu {
+        display:none;
+    }
+
+    nav>.first {
+        display: inline-flex !important;
+    }
+
+    nav>p {
+        display:none !important;
+    }
+}
+
+@media (min-width:701px) {
+    .navMenu
+    {
+        display: inline-flex !important;
+    }
+}
 
 section{
     text-align: justify;
@@ -89,14 +148,27 @@ section div {
     padding: 1rem 1.5rem;
 }
 
-section div img {
+section div figure {
     width: 25%;
     box-shadow: rgb(138, 138, 138) 0 0 6px;  
     border: 8px solid white;
     margin: 0.5rem 1.5rem 1rem 1.5rem;
+    background-color: white;
+    text-align: center;
 }
 
-section div img.large {
+section figure img {
+    width:100%;
+}
+
+section figcaption {
+    font-size: 10px;
+    margin: 3px;
+    color: #A5C9CA;
+}
+
+
+section figure.large {
     width: 90%;
 }
 section p{
@@ -118,11 +190,11 @@ section h5{
     margin: 1rem 1rem;
 }
 
-section img.float-left {
+section .float-left {
     float: left;
 }
 
-section img.float-right {
+section .float-right {
     float:right;
 }
 
