@@ -76,8 +76,8 @@ nav>p {
     bottom: 0;
 }
 header button{
-    flex-basis: 1rem;
-    height: 1.5rem;
+    flex-basis: 15px;
+    height: 20px;
     border: none;
     position: absolute;
     right: 0;
@@ -92,7 +92,7 @@ header button:hover {
 }
 
 header button>img {
-    width: 1rem;
+    width: 15px;
     opacity: 80%;
 }
 
